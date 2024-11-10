@@ -4,7 +4,6 @@ Grafika Komputerowa i Wizualizacja 2023/24
 
 Temat projektu: 22. Symulacja rosnącego drzewa
 
-===========
 Sterowanie:
 ===========
 W - przód
@@ -17,7 +16,7 @@ myszka - sterowanie kamerą
 G - otwarcie bramy
 H - zamknięcie bramy
 
-======
+
 Źródła:
 ======
 //https://www.urbangreenup.eu/imgpub/1883284/900/0/fences.webp
@@ -25,7 +24,7 @@ H - zamknięcie bramy
 //https://www.freepik.com/free-photo/top-view-metal-surface-with-pattern_11684381.htm
 learnopengl.com
 
-================
+
 Proces rysowania
 ================
 1. Inicjalizacja i konfiguracja OpenGL: Tworzenie okna, ustawianie kontekstu, włączanie testu głębokości.
@@ -40,7 +39,7 @@ Proces rysowania
 10. Czyszczenie zasobów: Usuwanie VAO, VBO, EBO, kończenie działania GLFW.
 
 
-===============================
+
 main.cpp - główny plik projektu
 ===============================
 SCR_WIDTH - Szerokość okna aplikacji w pikselach.
@@ -401,7 +400,6 @@ Zwracanie identyfikatora tekstury:
 
 return textureID - Zwraca identyfikator tekstury.
 
-========================================
 fragmentShaderForPhongShadingWithTexture:
 ========================================
 Material:
@@ -443,7 +441,6 @@ Ambient: Oświetlenie otoczenia, które nie zależy od kierunku światła.
 Diffuse: Oświetlenie rozproszone, które zależy od kąta padania światła na powierzchnię (kąt między N a L).
 Specular: Oświetlenie odbite, które tworzy błyski na powierzchni i zależy od kąta odbicia światła (kąt między V a R).
 
-======================================
 vertexShaderForPhongShadingWithTexture
 ======================================
 
@@ -476,7 +473,6 @@ TexCoords = aTexCoords:
 
 Przekazuje współrzędne tekstury bez zmian do zmiennej TexCoords.
 
-=================================================================
 Camera.h - plik do obsługi kamery ze strony learnopengl.com
 =================================================================
 
@@ -546,7 +542,6 @@ use(): Aktywuje program shaderów, ustawiając go jako bieżący w OpenGL
 
 checkCompileErrors(): Sprawdza, czy kompilacja shadera lub linkowanie programu shaderów zakończyły się sukcesem. Jeśli nie, wyświetla odpowiedni komunikat błędu.
 
-========================================================================================
 pointLight.h - plik do obsługi punktowych źródeł światła ze strony learnopengl.com
 ========================================================================================
 
@@ -569,7 +564,6 @@ turnSpecularOn/Off: Włącza/wyłącza komponent specular.
 
 ambientOn, diffuseOn, specularOn: Zmienna kontrolująca, czy dany komponent światła jest włączony (1.0) czy wyłączony (0.0).
 
-============================================================
 Mesh.h - plik reprezentujący siatkę 3D do renderowania 
 ============================================================
 Struktura Vertex definiuje pojedynczy wierzchołek siatki zawierający:
@@ -608,7 +602,6 @@ Wiąże VAO (glBindVertexArray) i bufor wierzchołków (glBindBuffer), a następ
 Konfiguruje atrybuty wierzchołków dla pozycji, normalnych i współrzędnych tekstury (glEnableVertexAttribArray, glVertexAttribPointer).
 Kończy wiązanie VAO (glBindVertexArray(0)).
 
-==================================================
 Model.h - plik odpowiedzialny za obsługę modeli 3D
 ==================================================
 
