@@ -508,7 +508,6 @@ ProcessMouseScroll(): Przetwarza ruch kółka myszy, aktualizując wartość Zoo
 
 updateCameraVectors(): Aktualizuje wektory Front, Right i Up na podstawie aktualnych kątów Eulera.
 
-===================================================================
 Shader.h - plik do obsługi shaderów ze strony learnopengl.com
 ===================================================================
 
